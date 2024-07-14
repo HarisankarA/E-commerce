@@ -15,7 +15,7 @@ const Header = () => {
         <div className='h-full container mx-auto flex items-center px-4 justify-between'>
             <div>
                 <Link to={"/"}>
-                <Logo w={90} h={50}/></Link>
+                <Logo w={50} h={50}/></Link>
             </div>
 
             <div className='hidden lg:flex items-center w-full justify-between max-w-sm border rounded-full focus-within:shadow pl-2'>
