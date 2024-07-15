@@ -35,10 +35,10 @@ const Login = () => {
           
           <div className=' bg-white p-5 w-full max-w-sm mx-auto rounded'>
               <div className='h-20 w-20 mx-auto'>
-                <img src={LoginIcons} alt="login icon" />
+              <img src={LoginIcons} alt="login icon" />               
               </div>
 
-              <form className='pt-8' onSubmit={submitHandler}>
+              <form className="pt-8 flex flex-col gap-2" onSubmit={submitHandler}>
                 <div className='grid'>
                     <label>Email : </label> 
                     <div className='bg-slate-100 p-2'>
