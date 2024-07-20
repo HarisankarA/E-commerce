@@ -1,15 +1,14 @@
 {
-  "name": "backend",
+  "name": "ecommerce",
   "version": "1.0.0",
-  "main": "app.js",
+  "description": "Mern",
+  "main": "src/server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "nodemon src/server.js"
   },
-  "author": "Harish",
+  "author": "leo",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
