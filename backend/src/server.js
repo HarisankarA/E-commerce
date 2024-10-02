@@ -1,6 +1,7 @@
 import { config } from 'dotenv'
 import express, { json, urlencoded } from 'express'
 import {set, connect } from 'mongoose'
+import UserSignUpRouter from './user/UserSignUpRouter.js'
 
 
 const server = express()
@@ -10,10 +11,10 @@ config()
 set('strictQuery', false)
 
 
-
-
 const port = process.env.PORT || 3000
 const mongoose_connection = process.env.MONGO_DB
+
+server.use('/user/', UserSignUpRouter)
 
 const start = async () => {
 
